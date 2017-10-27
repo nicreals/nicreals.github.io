@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+
+  <meta name="description" content="Swift"/>
+
+
+
+
+  <meta name="keywords" content="iOS, Swift, A Little Boy`s Treasure" />
+
+
+
+
+
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="A Little Boy`s Treasure">
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/../public/fav.ico?v=2.6.0" />
+
+
+
+<link rel="canonical" href="http://nicreals.com/2017/02/09/iOS/Swift/"/>
+
+
+<link rel="stylesheet" type="text/css" href="/css/style.css?v=2.6.0" />
+
+
+
+
+
+
+  
+
+
+
+  <script id="baidu_push">
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+
+
+
+
+
+
+
+    <title> Swift - A Little Boy`s Treasure </title>
+  </head>
+
+  <body><div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/." class="logo">A Little Boy`s Treasure</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    
+      <a href="/">
+        <li class="mobile-menu-item">
+          
+          
+            Home
+          
+        </li>
+      </a>
+    
+      <a href="/archives/">
+        <li class="mobile-menu-item">
+          
+          
+            Archives
+          
+        </li>
+      </a>
+    
+      <a href="/tags">
+        <li class="mobile-menu-item">
+          
+          
+            Tags
+          
+        </li>
+      </a>
+    
+      <a href="/categories">
+        <li class="mobile-menu-item">
+          
+          
+            Categories
+          
+        </li>
+      </a>
+    
+      <a href="/about">
+        <li class="mobile-menu-item">
+          
+          
+            About
+          
+        </li>
+      </a>
+    
+  </ul>
+</nav>
+
+    <div class="container" id="mobile-panel">
+      <header id="header" class="header"><div class="logo-wrapper">
+  <a href="/." class="logo">A Little Boy`s Treasure</a>
+</div>
+
+<nav class="site-navbar">
+  
+    <ul id="menu" class="menu">
+      
+        <li class="menu-item">
+          <a class="menu-item-link" href="/">
+            
+            
+              Home
+            
+          </a>
+        </li>
+      
+        <li class="menu-item">
+          <a class="menu-item-link" href="/archives/">
+            
+            
+              Archives
+            
+          </a>
+        </li>
+      
+        <li class="menu-item">
+          <a class="menu-item-link" href="/tags">
+            
+            
+              Tags
+            
+          </a>
+        </li>
+      
+        <li class="menu-item">
+          <a class="menu-item-link" href="/categories">
+            
+            
+              Categories
+            
+          </a>
+        </li>
+      
+        <li class="menu-item">
+          <a class="menu-item-link" href="/about">
+            
+            
+              About
+            
+          </a>
+        </li>
+      
+    </ul>
+  
+</nav>
+
+      </header>
+
+      <main id="main" class="main">
+        <div class="content-wrapper">
+          <div id="content" class="content">
+            
+  
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">
+        
+          Swift
+        
+      </h1>
+
+      <div class="post-meta">
+        <span class="post-time">
+          2017-02-09
+        </span>
+        
+        
+      </div>
+    </header>
+
+    
+    
+  <div class="post-toc" id="post-toc">
+    <h2 class="post-toc-title">Contents</h2>
+    <div class="post-toc-content">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Swift"><span class="toc-text">Swift</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Closure"><span class="toc-text">Closure</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#循环引用"><span class="toc-text">循环引用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Enum"><span class="toc-text">Enum</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#循环结构及遍历"><span class="toc-text">循环结构及遍历</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#stride序列"><span class="toc-text">stride序列</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#indices属性"><span class="toc-text">indices属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#enumerated-方法"><span class="toc-text">enumerated()方法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#单例"><span class="toc-text">单例</span></a></li></ol></li></ol>
+    </div>
+  </div>
+
+
+    <div class="post-content">
+      
+        <h1 id="Swift"><a href="#Swift" class="headerlink" title="Swift"></a>Swift</h1><blockquote>
+<p><a href="http://swift.gg/2017/01/11/swift-3-tutorial-fundamentals/" target="_blank" rel="external">Swift3 指导手册</a></p>
+<p><a href="http://swifter.tips/singleton/" target="_blank" rel="external">Swift 单例模式</a></p>
+<p><a href="http://swift.gg/2017/01/10/dear-erica-singletons-and-property-observers/" target="_blank" rel="external">Swift单例中静态属性的额外作用</a></p>
+</blockquote>
+<h2 id="Closure"><a href="#Closure" class="headerlink" title="Closure"></a>Closure</h2><h2 id="循环引用"><a href="#循环引用" class="headerlink" title="循环引用"></a>循环引用</h2><h2 id="Enum"><a href="#Enum" class="headerlink" title="Enum"></a>Enum</h2><ul>
+<li>Swift中的枚举成员不会按顺序的被赋值为<code>0,1,2…</code>,每个枚举成员就是一个完备的值。</li>
+<li>使用<code>Switch</code>穷举<code>enum</code>时如果在没有<code>default</code>分支的情况下必须穷举所有枚举类型，否则会报错。</li>
+<li>相对于Objective-C中的枚举，Swift运行 switch 中匹配到的子句之后，程序会退出 switch 语句，并不会继续向下运行，不需要在每个分支判断后加<code>break</code></li>
+</ul>
+<a id="more"></a>
+<h2 id="循环结构及遍历"><a href="#循环结构及遍历" class="headerlink" title="循环结构及遍历"></a>循环结构及遍历</h2><h3 id="stride序列"><a href="#stride序列" class="headerlink" title="stride序列"></a><code>stride</code>序列</h3><p>stride 函数返回一个任意可变步长 类型值的序列</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">1.stride(through: 5, by: 1)   // 1,2,3,4,5 包含终点</div><div class="line">1.stride(to: 5, by: 1) // 1,2,3,4 不包含终点</div><div class="line"></div><div class="line">let  byThree = stride(from: 3, to: 10, by: 3)</div><div class="line">for ass in byThree &#123;</div><div class="line">    print(ass) // 3 6 9</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="indices属性"><a href="#indices属性" class="headerlink" title="indices属性"></a><code>indices</code>属性</h3><p><code>indices</code>属性会创建一个包含全部索引的范围</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">let names = [&quot;Robb&quot;, &quot;Sansa&quot;, &quot;Arya&quot;, &quot;Jon&quot;]</div><div class="line">for nameIndex in names.indices &#123;</div><div class="line">    if(nameIndex &lt; 3) &#123;</div><div class="line">        print(names[nameIndex]) //Robb, Sansa, Arya</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="enumerated-方法"><a href="#enumerated-方法" class="headerlink" title="enumerated()方法"></a><code>enumerated()</code>方法</h3><p> <code>enumerated()</code>返回 一个由每一个数据项索引值和数据值组成的元组</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">let names = [&quot;Robb&quot;, &quot;Sansa&quot;, &quot;Arya&quot;, &quot;Jon&quot;]</div><div class="line">for (index, name) in names.enumerated() &#123;</div><div class="line">    print(&quot;\(index): \(name)&quot;)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="单例"><a href="#单例" class="headerlink" title="单例"></a>单例</h2><p>一个最优雅的Swift单例写法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">class MyManager  &#123;</div><div class="line">    static let sharedInstance = MyManager()</div><div class="line">    private init() &#123;&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ol>
+<li>声明为<code>let</code> 可保证线程安全，</li>
+<li>将<code>init()</code>设置为<code>private</code>可保证不能外部生成新的实例。</li>
+</ol>
+<p>可以通过如下方式在调用单例时设置额外操作</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">public final class Singleton &#123;</div><div class="line">    private static let _shared = Singleton()</div><div class="line">    private init() &#123; &#125;</div><div class="line"></div><div class="line">    public static var shared: Singleton &#123;</div><div class="line">        get &#123;</div><div class="line">            doSomething() // 举个栗子</div><div class="line">            return _shared</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+      
+      
+
+
+
+      
+      
+    
+
+    
+      <footer class="post-footer">
+        
+          <div class="post-tags">
+            
+              <a href="/tags/iOS/">iOS</a>
+            
+              <a href="/tags/Swift/">Swift</a>
+            
+          </div>
+        
+        
+        
+  <nav class="post-nav">
+    
+      <a class="prev" href="/2017/02/23/Trick/Interview/">
+        <i class="iconfont icon-left"></i>
+        <span class="prev-text nav-default">Interview</span>
+        <span class="prev-text nav-mobile">Prev</span>
+      </a>
+    
+    
+      <a class="next" href="/2017/01/26/Gear/Travis-CI/">
+        <span class="next-text nav-default">Travis CI</span>
+        <span class="prev-text nav-mobile">Next</span>
+        <i class="iconfont icon-right"></i>
+      </a>
+    
+  </nav>
+
+      </footer>
+    
+
+  </article>
+
+
+          </div>
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+      </main>
+
+      <footer id="footer" class="footer">
+
+  <div class="social-links">
+    
+      
+        
+          <a href="mailto:nic.reals@outlook.com" class="iconfont icon-email" title="email"></a>
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        
+          <a href="https://github.com/nicreals" class="iconfont icon-github" title="github"></a>
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    
+    
+      <a href="/atom.xml" class="iconfont icon-rss" title="rss"></a>
+    
+  </div>
+
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://hexo.io/">Hexo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/ahonn/hexo-theme-even">Even</a>
+  </span>
+
+  <span class="copyright-year">
+    
+    &copy; 
+     
+      2015 - 
+    
+    2017
+
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">Nic Reals</span>
+  </span>
+</div>
+
+      </footer>
+
+      <div class="back-to-top" id="back-to-top">
+        <i class="iconfont icon-up"></i>
+      </div>
+    </div>
+
+    
+  
+
+
+
+    
+
+
+
+
+  
+    <script type="text/javascript" src="/lib/jquery/jquery-3.1.1.min.js"></script>
+  
+
+  
+    <script type="text/javascript" src="/lib/slideout/slideout.js"></script>
+  
+
+  
+
+
+    <script type="text/javascript" src="/js/src/even.js?v=2.6.0"></script>
+<script type="text/javascript" src="/js/src/bootstrap.js?v=2.6.0"></script>
+
+  </body>
+</html>

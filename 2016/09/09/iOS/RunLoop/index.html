@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+
+  <meta name="description" content="RunLoop"/>
+
+
+
+
+  <meta name="keywords" content="iOS, RunLoop, A Little Boy`s Treasure" />
+
+
+
+
+
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="A Little Boy`s Treasure">
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/../public/fav.ico?v=2.6.0" />
+
+
+
+<link rel="canonical" href="http://nicreals.com/2016/09/09/iOS/RunLoop/"/>
+
+
+<link rel="stylesheet" type="text/css" href="/css/style.css?v=2.6.0" />
+
+
+
+
+
+
+  
+
+
+
+  <script id="baidu_push">
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+
+
+
+
+
+
+
+    <title> RunLoop - A Little Boy`s Treasure </title>
+  </head>
+
+  <body><div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/." class="logo">A Little Boy`s Treasure</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    
+      <a href="/">
+        <li class="mobile-menu-item">
+          
+          
+            Home
+          
+        </li>
+      </a>
+    
+      <a href="/archives/">
+        <li class="mobile-menu-item">
+          
+          
+            Archives
+          
+        </li>
+      </a>
+    
+      <a href="/tags">
+        <li class="mobile-menu-item">
+          
+          
+            Tags
+          
+        </li>
+      </a>
+    
+      <a href="/categories">
+        <li class="mobile-menu-item">
+          
+          
+            Categories
+          
+        </li>
+      </a>
+    
+      <a href="/about">
+        <li class="mobile-menu-item">
+          
+          
+            About
+          
+        </li>
+      </a>
+    
+  </ul>
+</nav>
+
+    <div class="container" id="mobile-panel">
+      <header id="header" class="header"><div class="logo-wrapper">
+  <a href="/." class="logo">A Little Boy`s Treasure</a>
+</div>
+
+<nav class="site-navbar">
+  
+    <ul id="menu" class="menu">
+      
+        <li class="menu-item">
+          <a class="menu-item-link" href="/">
+            
+            
+              Home
+            
+          </a>
+        </li>
+      
+        <li class="menu-item">
+          <a class="menu-item-link" href="/archives/">
+            
+            
+              Archives
+            
+          </a>
+        </li>
+      
+        <li class="menu-item">
+          <a class="menu-item-link" href="/tags">
+            
+            
+              Tags
+            
+          </a>
+        </li>
+      
+        <li class="menu-item">
+          <a class="menu-item-link" href="/categories">
+            
+            
+              Categories
+            
+          </a>
+        </li>
+      
+        <li class="menu-item">
+          <a class="menu-item-link" href="/about">
+            
+            
+              About
+            
+          </a>
+        </li>
+      
+    </ul>
+  
+</nav>
+
+      </header>
+
+      <main id="main" class="main">
+        <div class="content-wrapper">
+          <div id="content" class="content">
+            
+  
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">
+        
+          RunLoop
+        
+      </h1>
+
+      <div class="post-meta">
+        <span class="post-time">
+          2016-09-09
+        </span>
+        
+        
+      </div>
+    </header>
+
+    
+    
+  <div class="post-toc" id="post-toc">
+    <h2 class="post-toc-title">Contents</h2>
+    <div class="post-toc-content">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#基本概念"><span class="toc-text">基本概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Runloop-与线程"><span class="toc-text">Runloop 与线程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Input-Source-和-Timer-Source"><span class="toc-text">Input Source 和 Timer Source</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Runloop工作特点："><span class="toc-text">Runloop工作特点：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ScrollView滚动时NSTimer停止问题"><span class="toc-text">ScrollView滚动时NSTimer停止问题</span></a></li></ol>
+    </div>
+  </div>
+
+
+    <div class="post-content">
+      
+        <!-- # RunLoop -->
+<blockquote>
+<p><a href="http://www.cnblogs.com/6duxz/p/4633741.html" target="_blank" rel="external">UIScrollView滚动时NSTimer停止问题</a></p>
+<p><a href="https://hit-alibaba.github.io/interview/iOS/ObjC-Basic/Runloop.html" target="_blank" rel="external">RunLoop简介</a></p>
+</blockquote>
+<h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><p>一种事件循环，是<code>Source</code>和<code>Observer</code>的集合，循环监听<code>Input Source</code>和<code>Timer Source</code>中的消息事件，然后在线程中处理这些事件。</p>
+<h2 id="Runloop-与线程"><a href="#Runloop-与线程" class="headerlink" title="Runloop 与线程"></a>Runloop 与线程</h2><p>Runloop 和线程是绑定在一起的。每个线程（包括主线程）都有一个对应的 Runloop 对象。我们并不能自己创建 Runloop 对象，但是可以获取到系统提供的 Runloop 对象。</p>
+<p>主线程的 Runloop 会在应用启动的时候完成启动，其他线程的 Runloop 默认并不会启动，需要我们手动启动。</p>
+<a id="more"></a>
+<h2 id="Input-Source-和-Timer-Source"><a href="#Input-Source-和-Timer-Source" class="headerlink" title="Input Source 和 Timer Source"></a>Input Source 和 Timer Source</h2><p>这两个都是 Runloop 事件的来源，其中 Input Source 又可以分为三类</p>
+<ul>
+<li>Port-Based Sources，系统底层的 Port 事件，例如 CFSocketRef ，在应用层基本用不到</li>
+<li>Custom Input Sources，用户手动创建的 Source</li>
+<li>Cocoa Perform Selector Sources， Cocoa 提供的 performSelector 系列方法，也是一种事件源</li>
+</ul>
+<p>Timer Source 顾名思义就是指定时器事件了。</p>
+<h2 id="Runloop工作特点："><a href="#Runloop工作特点：" class="headerlink" title="Runloop工作特点："></a>Runloop工作特点：</h2><ul>
+<li><p>当有事件发生时，Runloop会根据具体的事件类型通知应用程序作出响应；</p>
+</li>
+<li><p>当没有事件发生时，Runloop会进入休眠状态，从而达到省电的目的；</p>
+</li>
+<li><p>当事件再次发生时，Runloop会被重新唤醒，处理事件。</p>
+</li>
+</ul>
+<h2 id="ScrollView滚动时NSTimer停止问题"><a href="#ScrollView滚动时NSTimer停止问题" class="headerlink" title="ScrollView滚动时NSTimer停止问题"></a>ScrollView滚动时NSTimer停止问题</h2><p>当UIScrollView滚动时，<code>MainRunLoop</code>处于<code>UITrackingRunLoopMode</code>模式下，此时不会处理<code>NSDefaultRunLoopMode</code>的消息，创建NSTimer时将其加入到<code>NSRunLoopCommonModes</code>即可</p>
+
+      
+    </div>
+
+    
+      
+      
+
+
+
+      
+      
+    
+
+    
+      <footer class="post-footer">
+        
+          <div class="post-tags">
+            
+              <a href="/tags/iOS/">iOS</a>
+            
+              <a href="/tags/RunLoop/">RunLoop</a>
+            
+          </div>
+        
+        
+        
+  <nav class="post-nav">
+    
+      <a class="prev" href="/2016/09/24/CS/Design-Pattern/">
+        <i class="iconfont icon-left"></i>
+        <span class="prev-text nav-default">Design Pattern</span>
+        <span class="prev-text nav-mobile">Prev</span>
+      </a>
+    
+    
+      <a class="next" href="/2016/08/20/Gear/Tools/">
+        <span class="next-text nav-default">Tools</span>
+        <span class="prev-text nav-mobile">Next</span>
+        <i class="iconfont icon-right"></i>
+      </a>
+    
+  </nav>
+
+      </footer>
+    
+
+  </article>
+
+
+          </div>
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+      </main>
+
+      <footer id="footer" class="footer">
+
+  <div class="social-links">
+    
+      
+        
+          <a href="mailto:nic.reals@outlook.com" class="iconfont icon-email" title="email"></a>
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        
+          <a href="https://github.com/nicreals" class="iconfont icon-github" title="github"></a>
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    
+    
+      <a href="/atom.xml" class="iconfont icon-rss" title="rss"></a>
+    
+  </div>
+
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://hexo.io/">Hexo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/ahonn/hexo-theme-even">Even</a>
+  </span>
+
+  <span class="copyright-year">
+    
+    &copy; 
+     
+      2015 - 
+    
+    2017
+
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">Nic Reals</span>
+  </span>
+</div>
+
+      </footer>
+
+      <div class="back-to-top" id="back-to-top">
+        <i class="iconfont icon-up"></i>
+      </div>
+    </div>
+
+    
+  
+
+
+
+    
+
+
+
+
+  
+    <script type="text/javascript" src="/lib/jquery/jquery-3.1.1.min.js"></script>
+  
+
+  
+    <script type="text/javascript" src="/lib/slideout/slideout.js"></script>
+  
+
+  
+
+
+    <script type="text/javascript" src="/js/src/even.js?v=2.6.0"></script>
+<script type="text/javascript" src="/js/src/bootstrap.js?v=2.6.0"></script>
+
+  </body>
+</html>

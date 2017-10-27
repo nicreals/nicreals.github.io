@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+
+  <meta name="description" content="Performance Optimize"/>
+
+
+
+
+  <meta name="keywords" content="iOS, Performance Optimize, A Little Boy`s Treasure" />
+
+
+
+
+
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="A Little Boy`s Treasure">
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/../public/fav.ico?v=2.6.0" />
+
+
+
+<link rel="canonical" href="http://nicreals.com/2015/12/14/iOS/Performance/"/>
+
+
+<link rel="stylesheet" type="text/css" href="/css/style.css?v=2.6.0" />
+
+
+
+
+
+
+  
+
+
+
+  <script id="baidu_push">
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+
+
+
+
+
+
+
+    <title> Performance Optimize - A Little Boy`s Treasure </title>
+  </head>
+
+  <body><div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/." class="logo">A Little Boy`s Treasure</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    
+      <a href="/">
+        <li class="mobile-menu-item">
+          
+          
+            Home
+          
+        </li>
+      </a>
+    
+      <a href="/archives/">
+        <li class="mobile-menu-item">
+          
+          
+            Archives
+          
+        </li>
+      </a>
+    
+      <a href="/tags">
+        <li class="mobile-menu-item">
+          
+          
+            Tags
+          
+        </li>
+      </a>
+    
+      <a href="/categories">
+        <li class="mobile-menu-item">
+          
+          
+            Categories
+          
+        </li>
+      </a>
+    
+      <a href="/about">
+        <li class="mobile-menu-item">
+          
+          
+            About
+          
+        </li>
+      </a>
+    
+  </ul>
+</nav>
+
+    <div class="container" id="mobile-panel">
+      <header id="header" class="header"><div class="logo-wrapper">
+  <a href="/." class="logo">A Little Boy`s Treasure</a>
+</div>
+
+<nav class="site-navbar">
+  
+    <ul id="menu" class="menu">
+      
+        <li class="menu-item">
+          <a class="menu-item-link" href="/">
+            
+            
+              Home
+            
+          </a>
+        </li>
+      
+        <li class="menu-item">
+          <a class="menu-item-link" href="/archives/">
+            
+            
+              Archives
+            
+          </a>
+        </li>
+      
+        <li class="menu-item">
+          <a class="menu-item-link" href="/tags">
+            
+            
+              Tags
+            
+          </a>
+        </li>
+      
+        <li class="menu-item">
+          <a class="menu-item-link" href="/categories">
+            
+            
+              Categories
+            
+          </a>
+        </li>
+      
+        <li class="menu-item">
+          <a class="menu-item-link" href="/about">
+            
+            
+              About
+            
+          </a>
+        </li>
+      
+    </ul>
+  
+</nav>
+
+      </header>
+
+      <main id="main" class="main">
+        <div class="content-wrapper">
+          <div id="content" class="content">
+            
+  
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">
+        
+          Performance Optimize
+        
+      </h1>
+
+      <div class="post-meta">
+        <span class="post-time">
+          2015-12-14
+        </span>
+        
+        
+      </div>
+    </header>
+
+    
+    
+  <div class="post-toc" id="post-toc">
+    <h2 class="post-toc-title">Contents</h2>
+    <div class="post-toc-content">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#对象的创建和销毁"><span class="toc-text">对象的创建和销毁</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#利用Autorelease-Pool创建临时对象"><span class="toc-text">利用Autorelease Pool创建临时对象</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#异步销毁对象"><span class="toc-text">异步销毁对象</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#图像的加载与绘制"><span class="toc-text">图像的加载与绘制</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#加载图片"><span class="toc-text">加载图片</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#绘制图片"><span class="toc-text">绘制图片</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#离屏渲染"><span class="toc-text">离屏渲染</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#绘制圆角"><span class="toc-text">绘制圆角</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#绘制阴影"><span class="toc-text">绘制阴影</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#光栅化"><span class="toc-text">光栅化</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#TableView相关优化"><span class="toc-text">TableView相关优化</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#基础优化"><span class="toc-text">基础优化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#UITableView在快速滑动时的异步线程处理"><span class="toc-text">UITableView在快速滑动时的异步线程处理</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#性能检测"><span class="toc-text">性能检测</span></a></li></ol>
+    </div>
+  </div>
+
+
+    <div class="post-content">
+      
+        <!-- # Performance Optimize -->
+<h2 id="对象的创建和销毁"><a href="#对象的创建和销毁" class="headerlink" title="对象的创建和销毁"></a>对象的创建和销毁</h2><h3 id="利用Autorelease-Pool创建临时对象"><a href="#利用Autorelease-Pool创建临时对象" class="headerlink" title="利用Autorelease Pool创建临时对象"></a>利用<code>Autorelease Pool</code>创建临时对象</h3><p>当要创建大量临时对象时，可以显示创建<code>Autorelease Pool</code>即时销毁对象节省内存，而不用等待系统自带的<code>Autorelease Pool</code>执行时销毁;</p>
+<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">@autoreleasepool</span> &#123;</div><div class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>;i &lt; <span class="number">10000</span>; i ++) &#123;</div><div class="line">    TestObject *test = [[TestObject alloc] init];</div><div class="line">    [test doSomething];</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="异步销毁对象"><a href="#异步销毁对象" class="headerlink" title="异步销毁对象"></a>异步销毁对象</h3><p>当数据源非常大的时候(如<code>UITalbleView</code>)，销毁对象累计起来也非常耗费资源,可以异步销毁对象：</p>
+<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">TestModel *model = [[TestModel alloc] init];</div><div class="line">model.title = <span class="string">@"ass"</span>;</div><div class="line">model.name = <span class="string">@"hole"</span>;</div><div class="line">TestModel *temp = model;</div><div class="line">model = <span class="literal">nil</span>;</div><div class="line"><span class="built_in">dispatch_async</span>(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, <span class="number">0</span>), ^&#123;</div><div class="line">    [temp <span class="keyword">class</span>];</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>当给<code>model</code>赋值nil时，由于<code>model</code>所指向内存中的实际对象被<code>temp</code>强引用，所以该对象不会被销毁，<code>[temp class]</code>在后台线程调用，<code>temp</code>作为临时变量block执行结束后便被销毁，所指向的对象会在后台线程销毁，于是便达到了使<code>model</code>所指对象在后台线程销毁的目的,同时可以避免编译器警告。</p>
+<a id="more"></a>
+<h2 id="图像的加载与绘制"><a href="#图像的加载与绘制" class="headerlink" title="图像的加载与绘制"></a>图像的加载与绘制</h2><h3 id="加载图片"><a href="#加载图片" class="headerlink" title="加载图片"></a>加载图片</h3><p><code>[UIImage imageNamed:]</code>和<code>[UIImage imageWithContentsOfFile:]</code>两种加载图片方式的不同在于后者只会简单的加载文件而不会对图片进行缓存，所以在<code>UITableView</code>中大量使用<code>[UIImage imageNamed:]</code>对内存的消耗是非常感人的，除非是对于重复使用的图片使用<code>[UIImage imageNamed:]</code>，可以减少文件IO操作；</p>
+<p>但是<code>[UIImage imageWithContentsOfFile:]</code>有一个缺点是不能自动选择加载<code>@2x</code>/<code>@3x</code>的图片，所以可以定义如下宏定义来解决:</p>
+<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#define UPUncachedPNGImage(imageName) [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@<span class="meta-string">"%@@%zdx"</span>,imageName,@([UIScreen mainScreen].scale).integerValue] ofType:@<span class="meta-string">"png"</span>]]</span></div><div class="line"></div><div class="line"><span class="meta">#define UPCachedImage(imageName) [UIImage imageNamed:imageName]</span></div><div class="line"></div><div class="line">tableViewCell.imageView.image = UPUncachedPNGImage(<span class="string">@"image"</span>);</div></pre></td></tr></table></figure>
+<h3 id="绘制图片"><a href="#绘制图片" class="headerlink" title="绘制图片"></a>绘制图片</h3><p>由于<code>CoreGraphic</code>是线程安全的，所以可以异步手动绘制,可以同时减少CPU和GPU的消耗，常用语<code>UITableViewCell</code>中图片的绘制:</p>
+<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">- (<span class="keyword">void</span>)displayImage &#123;</div><div class="line">    <span class="built_in">dispatch_async</span>(backgroundQueue, ^&#123;</div><div class="line">        <span class="built_in">CGContextRef</span> ctx = <span class="built_in">CGBitmapContextCreate</span>(...);</div><div class="line">        <span class="comment">// draw in context...</span></div><div class="line">        <span class="built_in">CGImageRef</span> img = <span class="built_in">CGBitmapContextCreateImage</span>(ctx);</div><div class="line">        <span class="built_in">CFRelease</span>(ctx);</div><div class="line">        <span class="built_in">dispatch_async</span>(mainQueue, ^&#123;</div><div class="line">            layer.contents = img;</div><div class="line">        &#125;);</div><div class="line">    &#125;);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>同理利用<code>CoreText</code>异步绘制文字。</p>
+<h2 id="离屏渲染"><a href="#离屏渲染" class="headerlink" title="离屏渲染"></a>离屏渲染</h2><p>On-Screen Rendering<br>: GPU的渲染操作是在当前用于显示的屏幕缓冲区进行.</p>
+<p>Off-Screen Rendering (离屏渲染)<br>: GPU在当前屏幕缓冲区以外开辟一个缓冲区进行渲染操作.</p>
+<p>CALayer 的 border、圆角、阴影、遮罩（mask），CASharpLayer 的矢量图形显示，通常会触发离屏渲染（offscreen rendering）从而影响画面流畅性，在<code>UITableViewCell</code>中尽量避免离屏渲染。</p>
+<h3 id="绘制圆角"><a href="#绘制圆角" class="headerlink" title="绘制圆角"></a>绘制圆角</h3><p>通常情况下只给<code>CALayer</code>设置<code>cornerRadius</code>并不会触发离屏渲染，但是如果将<code>masksToBounds</code>设置为<code>YES</code>却会触发离屏渲染，若出现必须要使用<code>masksToBounds</code>的场景，可以手动绘制圆角:</p>
+<p><a href="http://www.jianshu.com/p/f970872fdc22" target="_blank" rel="external">高效添加圆角效果</a></p>
+<h3 id="绘制阴影"><a href="#绘制阴影" class="headerlink" title="绘制阴影"></a>绘制阴影</h3><p>绘制阴影效果时，为layer指定shadowPath可以避免<code>Offscreen-Rendered</code>:</p>
+<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">view.layer.shadowPath = [<span class="built_in">UIBezierPath</span>  bezierPathWithRect:view.bounds].CGPath;</div></pre></td></tr></table></figure>
+<h2 id="光栅化"><a href="#光栅化" class="headerlink" title="光栅化"></a>光栅化</h2><p>对于 <strong><em>内容相对固定重复</em></strong> 的内容，开启光栅化会将图层渲染为一个屏幕之外的位图(bitmap)，然后将这个位图缓存起来，这样可以减少GPU绘制压力，提高性能，常用与<code>UITableView</code>,<code>UICollectionView</code>,<code>UIScrollView</code>等.</p>
+<p>光栅化性能最好的方式是是开启 cell 的 <code>shouldRasterize</code>，并将 <code>rasterizationScale</code> 设置为 <code>UIScreen.main.scale</code>。如果设置<code>cell.layer.rasterizationScale = cell.layer.contentsScale</code>则会出现视图模糊的现象。</p>
+<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cell.layer.shouldRasterize = <span class="literal">YES</span>;</div><div class="line">cell.layer.rasterizationScale = <span class="built_in">UIScreen</span>.main.scale;</div></pre></td></tr></table></figure>
+<p>若 cell 中有多个需要离屏渲染的子视图，对每个子视图分别开启光栅化并不会优化性能，反而可能造成性能下降。</p>
+<h2 id="TableView相关优化"><a href="#TableView相关优化" class="headerlink" title="TableView相关优化"></a>TableView相关优化</h2><h3 id="基础优化"><a href="#基础优化" class="headerlink" title="基础优化"></a>基础优化</h3><ul>
+<li>最大程度利用重用机制(差异性属性放在初始化之外，并且条件判断尽量覆盖所有情况,复用view和某些开销大的对象);</li>
+<li>cell使用轻量级对像，<code>CALayer</code>的创建比<code>UIView</code>节省CPU资源，避免使用Xib创建cell;</li>
+<li>当view不透明时，尽量将<code>opaque</code>设置为<code>YES</code>,可以减少GPU混合绘制消耗;</li>
+<li><strong>性能敏感</strong> 的tableView使用手动计算cell高度，避免使用<code>AutoLayout</code>;</li>
+</ul>
+<h3 id="UITableView在快速滑动时的异步线程处理"><a href="#UITableView在快速滑动时的异步线程处理" class="headerlink" title="UITableView在快速滑动时的异步线程处理"></a><code>UITableView</code>在快速滑动时的异步线程处理</h3><p>通常在加载<code>UITableViewCell</code>内容时会发送异步请求数据，然后回到UI线程加载内容，如果<code>UITableView</code>在快速滑动时创建大量异步请求(如加载网络图片)，当异步任务完成时大量<code>UITableViewCell</code>其实已经不在显示区域内而被销毁了，所以这些异步请求是没有意义的，虽然是异步请求，但过多的异步线程同样也会造成卡顿；<br>可做如下优化：<br><figure class="highlight objectivec"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">- (<span class="keyword">void</span>)scrollViewDidEndDragging:(<span class="built_in">UIScrollView</span> *)scrollView willDecelerate:(<span class="built_in">BOOL</span>)decelerate &#123;</div><div class="line">  <span class="built_in">NSArray</span> *visiblePaths = [<span class="keyword">self</span>.tableView indexPathsForVisibleRows];</div><div class="line">        <span class="keyword">for</span> (<span class="built_in">NSIndexPath</span> *indexPath <span class="keyword">in</span> visiblePaths)</div><div class="line">        &#123;</div><div class="line">          [<span class="keyword">self</span> asyncRequest]; <span class="comment">// 当tableView滑动停止时，就当cell 在可是区域内才发送异步请求</span></div><div class="line">        &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h2 id="性能检测"><a href="#性能检测" class="headerlink" title="性能检测"></a>性能检测</h2><ul>
+<li><p>终极调试神器-FLEX：</p>
+<p><a href="https://github.com/Flipboard/FLEX" target="_blank" rel="external">FLEX-Github</a></p>
+</li>
+</ul>
+<ul>
+<li><p>Instruments 检测离屏渲染，内存泄漏等问题：</p>
+<p><a href="http://www.samirchen.com/use-instruments/" target="_blank" rel="external">使用 Instruments 做 iOS 程序性能调试</a></p>
+</li>
+</ul>
+<ul>
+<li><p>实时显示FPS：</p>
+<p><a href="https://github.com/yehot/YYFPSLabel" target="_blank" rel="external">YYFPSLabel-Github</a></p>
+</li>
+</ul>
+<ul>
+<li><p>循环引用检测工具:</p>
+<p><a href="https://github.com/facebook/FBRetainCycleDetector" target="_blank" rel="external">FBRetainCycleDetector-Github</a></p>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+      
+      
+
+
+
+      
+      
+    
+
+    
+      <footer class="post-footer">
+        
+          <div class="post-tags">
+            
+              <a href="/tags/iOS/">iOS</a>
+            
+              <a href="/tags/Performance-Optimize/">Performance Optimize</a>
+            
+          </div>
+        
+        
+        
+  <nav class="post-nav">
+    
+      <a class="prev" href="/2015/12/14/iOS/Objective-C/">
+        <i class="iconfont icon-left"></i>
+        <span class="prev-text nav-default">Objective-C</span>
+        <span class="prev-text nav-mobile">Prev</span>
+      </a>
+    
+    
+      <a class="next" href="/2015/10/30/iOS/MEMO/">
+        <span class="next-text nav-default">MEMO</span>
+        <span class="prev-text nav-mobile">Next</span>
+        <i class="iconfont icon-right"></i>
+      </a>
+    
+  </nav>
+
+      </footer>
+    
+
+  </article>
+
+
+          </div>
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+      </main>
+
+      <footer id="footer" class="footer">
+
+  <div class="social-links">
+    
+      
+        
+          <a href="mailto:nic.reals@outlook.com" class="iconfont icon-email" title="email"></a>
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        
+          <a href="https://github.com/nicreals" class="iconfont icon-github" title="github"></a>
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    
+    
+      <a href="/atom.xml" class="iconfont icon-rss" title="rss"></a>
+    
+  </div>
+
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://hexo.io/">Hexo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/ahonn/hexo-theme-even">Even</a>
+  </span>
+
+  <span class="copyright-year">
+    
+    &copy; 
+     
+      2015 - 
+    
+    2017
+
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">Nic Reals</span>
+  </span>
+</div>
+
+      </footer>
+
+      <div class="back-to-top" id="back-to-top">
+        <i class="iconfont icon-up"></i>
+      </div>
+    </div>
+
+    
+  
+
+
+
+    
+
+
+
+
+  
+    <script type="text/javascript" src="/lib/jquery/jquery-3.1.1.min.js"></script>
+  
+
+  
+    <script type="text/javascript" src="/lib/slideout/slideout.js"></script>
+  
+
+  
+
+
+    <script type="text/javascript" src="/js/src/even.js?v=2.6.0"></script>
+<script type="text/javascript" src="/js/src/bootstrap.js?v=2.6.0"></script>
+
+  </body>
+</html>

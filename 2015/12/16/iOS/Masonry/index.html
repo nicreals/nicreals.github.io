@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+
+  <meta name="description" content="Masonry"/>
+
+
+
+
+  <meta name="keywords" content="iOS, Masonry, A Little Boy`s Treasure" />
+
+
+
+
+
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="A Little Boy`s Treasure">
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/../public/fav.ico?v=2.6.0" />
+
+
+
+<link rel="canonical" href="http://nicreals.com/2015/12/16/iOS/Masonry/"/>
+
+
+<link rel="stylesheet" type="text/css" href="/css/style.css?v=2.6.0" />
+
+
+
+
+
+
+  
+
+
+
+  <script id="baidu_push">
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+
+
+
+
+
+
+
+    <title> Masonry - A Little Boy`s Treasure </title>
+  </head>
+
+  <body><div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/." class="logo">A Little Boy`s Treasure</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    
+      <a href="/">
+        <li class="mobile-menu-item">
+          
+          
+            Home
+          
+        </li>
+      </a>
+    
+      <a href="/archives/">
+        <li class="mobile-menu-item">
+          
+          
+            Archives
+          
+        </li>
+      </a>
+    
+      <a href="/tags">
+        <li class="mobile-menu-item">
+          
+          
+            Tags
+          
+        </li>
+      </a>
+    
+      <a href="/categories">
+        <li class="mobile-menu-item">
+          
+          
+            Categories
+          
+        </li>
+      </a>
+    
+      <a href="/about">
+        <li class="mobile-menu-item">
+          
+          
+            About
+          
+        </li>
+      </a>
+    
+  </ul>
+</nav>
+
+    <div class="container" id="mobile-panel">
+      <header id="header" class="header"><div class="logo-wrapper">
+  <a href="/." class="logo">A Little Boy`s Treasure</a>
+</div>
+
+<nav class="site-navbar">
+  
+    <ul id="menu" class="menu">
+      
+        <li class="menu-item">
+          <a class="menu-item-link" href="/">
+            
+            
+              Home
+            
+          </a>
+        </li>
+      
+        <li class="menu-item">
+          <a class="menu-item-link" href="/archives/">
+            
+            
+              Archives
+            
+          </a>
+        </li>
+      
+        <li class="menu-item">
+          <a class="menu-item-link" href="/tags">
+            
+            
+              Tags
+            
+          </a>
+        </li>
+      
+        <li class="menu-item">
+          <a class="menu-item-link" href="/categories">
+            
+            
+              Categories
+            
+          </a>
+        </li>
+      
+        <li class="menu-item">
+          <a class="menu-item-link" href="/about">
+            
+            
+              About
+            
+          </a>
+        </li>
+      
+    </ul>
+  
+</nav>
+
+      </header>
+
+      <main id="main" class="main">
+        <div class="content-wrapper">
+          <div id="content" class="content">
+            
+  
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">
+        
+          Masonry
+        
+      </h1>
+
+      <div class="post-meta">
+        <span class="post-time">
+          2015-12-16
+        </span>
+        
+        
+      </div>
+    </header>
+
+    
+    
+  <div class="post-toc" id="post-toc">
+    <h2 class="post-toc-title">Contents</h2>
+    <div class="post-toc-content">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#基础"><span class="toc-text">基础</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#UIScrollView"><span class="toc-text">UIScrollView</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#更新单个约束"><span class="toc-text">更新单个约束</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#优先级"><span class="toc-text">优先级</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#NSArray-Category"><span class="toc-text">NSArray Category</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Baseline"><span class="toc-text">Baseline</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Tips"><span class="toc-text">Tips</span></a></li></ol>
+    </div>
+  </div>
+
+
+    <div class="post-content">
+      
+        <!-- # Masonry -->
+<blockquote>
+<p><a href="http://adad184.com/2014/09/28/use-masonry-to-quick-solve-autolayout/" target="_blank" rel="external">Masonry快速入门</a></p>
+</blockquote>
+<h2 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h2><ul>
+<li>view只有拥有<code>superView</code>之后才能使用<code>Masonry</code>设置约束;</li>
+<li><code>mas_equalTo</code>和<code>equalTo</code>的区别在于<code>mas_equalTo</code>是个宏，<code>equalTo</code>在对<code>height</code>,<code>width</code>做约束时只能使用<code>NSNumber</code>类型;</li>
+<li><code>mas_updateConstraints</code>会在原有约束上添加约束，而<code>mas_remakeConstraints</code>是完全重新设置约束；</li>
+</ul>
+<h2 id="UIScrollView"><a href="#UIScrollView" class="headerlink" title="UIScrollView"></a>UIScrollView</h2><p>对于scrollView，scrollView本身的大小(frame)由scrollView本身对其他view的约束决定，而其内容的大小(contentSize)由其他View对scrollView的约束决定。</p>
+<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// scrollView本身的大小约束</span></div><div class="line">[scrollView mas_makeConstraints:^(MASConstraintMaker *make) &#123;</div><div class="line">       make.left.right.bottom.top.equalTo(weakSelf);</div><div class="line"> &#125;];</div><div class="line"></div><div class="line"><span class="comment">// scrollView内容大小约束</span></div><div class="line">[view1 mas_makeConstraints:^(MASConstraintMaker *make) &#123;</div><div class="line">      make.left.equalTo(scrollView);</div><div class="line">&#125;];</div><div class="line"></div><div class="line">[view1 mas_makeConstraints:^(MASConstraintMaker *make) &#123;</div><div class="line">      make.right.equalTo(scrollView);</div><div class="line">&#125;];</div><div class="line"></div><div class="line">[view1 mas_makeConstraints:^(MASConstraintMaker *make) &#123;</div><div class="line">      make.top.equalTo(scrollView);</div><div class="line">&#125;];</div><div class="line"></div><div class="line">[view1 mas_makeConstraints:^(MASConstraintMaker *make) &#123;</div><div class="line">      make.bottom.equalTo(scrollView);</div><div class="line">&#125;];</div></pre></td></tr></table></figure>
+<p>如果scrollView的大小使用frame设置，而contentSize由masonry设置，那么scrollView的实际大小可能会与设置的frame大小不一致；</p>
+<a id="more"></a>
+<h2 id="更新单个约束"><a href="#更新单个约束" class="headerlink" title="更新单个约束"></a>更新单个约束</h2><p>虽然利用<code>mas_updateConstraints</code>可以更新约束，但在实际使用中该方法会经常抽风，可以利用一个变量记录某个约束，然后更改该变量即可更新约束:</p>
+<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">MASConstraint *_labelLeftContraint;</div><div class="line"></div><div class="line">[label mas_makeConstraints:^(MASConstraintMaker *make) &#123;</div><div class="line">   _labelLeftContraint = make.left(<span class="keyword">self</span>);</div><div class="line">    make.bottom.equalTo(<span class="keyword">self</span>).offset(<span class="number">-10</span>);</div><div class="line">    make.height.equalTo(@(<span class="number">150</span>));</div><div class="line">&#125;];</div><div class="line"></div><div class="line">_labelLeftContraint.offset = <span class="number">15.</span>f; <span class="comment">// 更改约束</span></div><div class="line">[_labelLeftContraint unInstall];   <span class="comment">// 删除约束</span></div></pre></td></tr></table></figure>
+<h2 id="优先级"><a href="#优先级" class="headerlink" title="优先级"></a>优先级</h2><p>每个约束的默认优先级为priorityHigh(),一个view一个属性有两个约束，会优先对优先级高的那个进行约束；</p>
+<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">[view mas_makeConstraints:^(MASConstraintMaker *make) &#123;</div><div class="line">      make.left.equalTo(label).offset(<span class="number">-2</span>);</div><div class="line">      make.left.equalTo(anotherLabel).priorityLow();</div><div class="line">&#125;];</div></pre></td></tr></table></figure>
+<p>CompressionResistancePriority为阻止自身内容被挤压的优先级，优先级越低，越容易被挤压；</p>
+<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[view setContentCompressionResistancePriority:<span class="built_in">UILayoutPriorityDefaultLow</span> forAxis:<span class="built_in">UILayoutConstraintAxisHorizontal</span>];</div></pre></td></tr></table></figure>
+<p>ContentHuggingPriority为阻止view被拉伸的优先级，优先级越高，越不容易被拉伸；</p>
+<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[_nameLabel setContentHuggingPriority:<span class="built_in">UILayoutPriorityDefaultLow</span> forAxis:<span class="built_in">UILayoutConstraintAxisHorizontal</span>];</div></pre></td></tr></table></figure>
+<h2 id="NSArray-Category"><a href="#NSArray-Category" class="headerlink" title="NSArray Category"></a>NSArray Category</h2><p>使用NSArray的MASAdditions扩展可迅速对array里的view在指定方向上等比约束，使用该方法必须保证array的view数量不少于2个。</p>
+<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[array mas_distributeViewsAlongAxis:MASAxisTypeHorizontal withFixedSpacing:<span class="number">20</span> leadSpacing:<span class="number">20</span> tailSpacing:<span class="number">20</span>];</div></pre></td></tr></table></figure>
+<h2 id="Baseline"><a href="#Baseline" class="headerlink" title="Baseline"></a>Baseline</h2><p>baseline即基线的意思，对应于Autolayout里面的NSLayoutFormatAlignAllBaseline,默认情况下是view的center。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">make.baseline.equalTo(view);</div></pre></td></tr></table></figure></p>
+<p>改变一个view的baseline需要重写UIView的viewForBaselineLayout，返回的subView的baseline将作为view的baseline。</p>
+<h2 id="Tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h2><ul>
+<li><p>在创建UIScrollView及其子View的实例对象时为其设置frame，避免约束时警告；</p>
+</li>
+<li><p>对于UIImageView的实例，当其left，right(或top，bottom)均对其他View有约束，应该对UIImageView实例的width(height)做约束，避免造成图片拉伸的情况；</p>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+      
+      
+
+
+
+      
+      
+    
+
+    
+      <footer class="post-footer">
+        
+          <div class="post-tags">
+            
+              <a href="/tags/iOS/">iOS</a>
+            
+              <a href="/tags/Masonry/">Masonry</a>
+            
+          </div>
+        
+        
+        
+  <nav class="post-nav">
+    
+      <a class="prev" href="/2015/12/19/iOS/iOS-Devices/">
+        <i class="iconfont icon-left"></i>
+        <span class="prev-text nav-default">iOS Devices</span>
+        <span class="prev-text nav-mobile">Prev</span>
+      </a>
+    
+    
+      <a class="next" href="/2015/12/14/iOS/Objective-C/">
+        <span class="next-text nav-default">Objective-C</span>
+        <span class="prev-text nav-mobile">Next</span>
+        <i class="iconfont icon-right"></i>
+      </a>
+    
+  </nav>
+
+      </footer>
+    
+
+  </article>
+
+
+          </div>
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+      </main>
+
+      <footer id="footer" class="footer">
+
+  <div class="social-links">
+    
+      
+        
+          <a href="mailto:nic.reals@outlook.com" class="iconfont icon-email" title="email"></a>
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        
+          <a href="https://github.com/nicreals" class="iconfont icon-github" title="github"></a>
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    
+    
+      <a href="/atom.xml" class="iconfont icon-rss" title="rss"></a>
+    
+  </div>
+
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://hexo.io/">Hexo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/ahonn/hexo-theme-even">Even</a>
+  </span>
+
+  <span class="copyright-year">
+    
+    &copy; 
+     
+      2015 - 
+    
+    2017
+
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">Nic Reals</span>
+  </span>
+</div>
+
+      </footer>
+
+      <div class="back-to-top" id="back-to-top">
+        <i class="iconfont icon-up"></i>
+      </div>
+    </div>
+
+    
+  
+
+
+
+    
+
+
+
+
+  
+    <script type="text/javascript" src="/lib/jquery/jquery-3.1.1.min.js"></script>
+  
+
+  
+    <script type="text/javascript" src="/lib/slideout/slideout.js"></script>
+  
+
+  
+
+
+    <script type="text/javascript" src="/js/src/even.js?v=2.6.0"></script>
+<script type="text/javascript" src="/js/src/bootstrap.js?v=2.6.0"></script>
+
+  </body>
+</html>

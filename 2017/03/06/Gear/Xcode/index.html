@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+
+  <meta name="description" content="Xcode"/>
+
+
+
+
+  <meta name="keywords" content="Gear, Xcode, A Little Boy`s Treasure" />
+
+
+
+
+
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="A Little Boy`s Treasure">
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/../public/fav.ico?v=2.6.0" />
+
+
+
+<link rel="canonical" href="http://nicreals.com/2017/03/06/Gear/Xcode/"/>
+
+
+<link rel="stylesheet" type="text/css" href="/css/style.css?v=2.6.0" />
+
+
+
+
+
+
+  
+
+
+
+  <script id="baidu_push">
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+
+
+
+
+
+
+
+    <title> Xcode - A Little Boy`s Treasure </title>
+  </head>
+
+  <body><div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/." class="logo">A Little Boy`s Treasure</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    
+      <a href="/">
+        <li class="mobile-menu-item">
+          
+          
+            Home
+          
+        </li>
+      </a>
+    
+      <a href="/archives/">
+        <li class="mobile-menu-item">
+          
+          
+            Archives
+          
+        </li>
+      </a>
+    
+      <a href="/tags">
+        <li class="mobile-menu-item">
+          
+          
+            Tags
+          
+        </li>
+      </a>
+    
+      <a href="/categories">
+        <li class="mobile-menu-item">
+          
+          
+            Categories
+          
+        </li>
+      </a>
+    
+      <a href="/about">
+        <li class="mobile-menu-item">
+          
+          
+            About
+          
+        </li>
+      </a>
+    
+  </ul>
+</nav>
+
+    <div class="container" id="mobile-panel">
+      <header id="header" class="header"><div class="logo-wrapper">
+  <a href="/." class="logo">A Little Boy`s Treasure</a>
+</div>
+
+<nav class="site-navbar">
+  
+    <ul id="menu" class="menu">
+      
+        <li class="menu-item">
+          <a class="menu-item-link" href="/">
+            
+            
+              Home
+            
+          </a>
+        </li>
+      
+        <li class="menu-item">
+          <a class="menu-item-link" href="/archives/">
+            
+            
+              Archives
+            
+          </a>
+        </li>
+      
+        <li class="menu-item">
+          <a class="menu-item-link" href="/tags">
+            
+            
+              Tags
+            
+          </a>
+        </li>
+      
+        <li class="menu-item">
+          <a class="menu-item-link" href="/categories">
+            
+            
+              Categories
+            
+          </a>
+        </li>
+      
+        <li class="menu-item">
+          <a class="menu-item-link" href="/about">
+            
+            
+              About
+            
+          </a>
+        </li>
+      
+    </ul>
+  
+</nav>
+
+      </header>
+
+      <main id="main" class="main">
+        <div class="content-wrapper">
+          <div id="content" class="content">
+            
+  
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">
+        
+          Xcode
+        
+      </h1>
+
+      <div class="post-meta">
+        <span class="post-time">
+          2017-03-06
+        </span>
+        
+        
+      </div>
+    </header>
+
+    
+    
+  <div class="post-toc" id="post-toc">
+    <h2 class="post-toc-title">Contents</h2>
+    <div class="post-toc-content">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#xcode-install"><span class="toc-text">xcode-install</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Warning"><span class="toc-text">Warning</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#警告等级"><span class="toc-text">警告等级</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#警告屏蔽"><span class="toc-text">警告屏蔽</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#环境变量"><span class="toc-text">环境变量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#多Framework"><span class="toc-text">多Framework</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#僵尸模式"><span class="toc-text">僵尸模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#XCodeConfig"><span class="toc-text">XCodeConfig</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#pbxproj合并冲突"><span class="toc-text">pbxproj合并冲突</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#mergepbx"><span class="toc-text">mergepbx</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#xUnique-弃用"><span class="toc-text">xUnique (弃用)</span></a></li></ol></li></ol>
+    </div>
+  </div>
+
+
+    <div class="post-content">
+      
+        <!-- # Xcode -->
+<blockquote>
+<p><a href="http://liujinlongxa.com/2016/11/27/Xcode%E5%A6%82%E4%BD%95%E8%AE%BE%E7%BD%AE%E5%9C%A8%E7%BC%96%E8%AF%91%E5%89%8D%E8%87%AA%E5%8A%A8%E8%BF%90%E8%A1%8C%E8%84%9A%E6%9C%AC/" target="_blank" rel="external">Xcode配置编译前脚本</a></p>
+<p><a href="http://draveness.me/bei-xcodeproj-keng-de-zhe-ji-tian.html" target="_blank" rel="external">脚本动态添加Xcode文件</a></p>
+<p><a href="http://www.jianshu.com/p/2167f755c47e" target="_blank" rel="external">PlistBuddy使用</a></p>
+</blockquote>
+<h2 id="xcode-install"><a href="#xcode-install" class="headerlink" title="xcode-install"></a>xcode-install</h2><p>安装多个版本Xcode:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">gem install xcode-install</div><div class="line">xcversion list</div><div class="line">xcversion install 7</div></pre></td></tr></table></figure></p>
+<p>切换Xcode：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">// 查看当前 Xcode 路径</div><div class="line">xcode-select -p</div><div class="line"></div><div class="line">// 切换</div><div class="line">sudo xcode-select -s /Applications/Xcode-8.2.1.app/Contents/Developer/</div></pre></td></tr></table></figure></p>
+<a id="more"></a>
+<h2 id="Warning"><a href="#Warning" class="headerlink" title="Warning"></a>Warning</h2><h3 id="警告等级"><a href="#警告等级" class="headerlink" title="警告等级"></a>警告等级</h3><ul>
+<li>开启可信度较高的警告</li>
+</ul>
+<p>Build Setting -&gt; other c flags -&gt; <code>-Wall</code></p>
+<ul>
+<li>开启大部分警告</li>
+</ul>
+<p>Build Setting -&gt; other c flags -&gt; <code>-Wextra</code></p>
+<ul>
+<li>屏蔽第三方SDK<code>was built for newer iOS version</code>警告</li>
+</ul>
+<p>Target -&gt; Build Setting -&gt; Other Linker Flag -&gt; <code>-w</code></p>
+<h3 id="警告屏蔽"><a href="#警告屏蔽" class="headerlink" title="警告屏蔽"></a>警告屏蔽</h3><p>对于编译警告，右键<code>Reveal in Log</code>，找到类似<code>[-Wprotocol]</code>的警告类型，然后在<code>Build Setting</code> -&gt; <code>Other Warning Flags</code> 中添加<code>[-Wno-protocol]</code></p>
+<h2 id="环境变量"><a href="#环境变量" class="headerlink" title="环境变量"></a>环境变量</h2><p><code>Edit Scheme</code> -&gt; <code>Arguments</code> -&gt; <code>Environment Variables</code><br>例如添加<code>DYLD_PRINT_STATISTICS = 1</code>，app在启动时会在console中打印详细的启动耗时</p>
+<h2 id="多Framework"><a href="#多Framework" class="headerlink" title="多Framework"></a>多Framework</h2><h2 id="僵尸模式"><a href="#僵尸模式" class="headerlink" title="僵尸模式"></a>僵尸模式</h2><h2 id="XCodeConfig"><a href="#XCodeConfig" class="headerlink" title="XCodeConfig"></a>XCodeConfig</h2><h2 id="pbxproj合并冲突"><a href="#pbxproj合并冲突" class="headerlink" title="pbxproj合并冲突"></a>pbxproj合并冲突</h2><h3 id="mergepbx"><a href="#mergepbx" class="headerlink" title="mergepbx"></a>mergepbx</h3><ol>
+<li>安装<code>mergepbx</code></li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">brew install mergepbx</div></pre></td></tr></table></figure>
+<ol>
+<li>在<code>~/.gitconfig</code>文件中配置<code>mergepbx</code></li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">[merge &quot;mergepbx&quot;]</div><div class="line">        name = XCode project files merger</div><div class="line">        driver = mergepbx %O %A %B</div></pre></td></tr></table></figure>
+<ol>
+<li>在工程目录下创建<code>. gitattributes</code>文件并设置用mergepbx处理<code>pbxproj</code>文件合并</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">*.pbxproj merge=mergepbx</div><div class="line">*.pbxproj binary merge=union</div></pre></td></tr></table></figure>
+<h3 id="xUnique-弃用"><a href="#xUnique-弃用" class="headerlink" title="xUnique (弃用)"></a>xUnique (弃用)</h3><p><a href="http://www.swiftcafe.io/2016/10/12/xunique/" target="_blank" rel="external">使用xUnique解决xcproject文件冲突</a></p>
+<ol>
+<li><p>安装pip: <a href="https://pip.pypa.io/en/stable/installing/" target="_blank" rel="external">pip官方文档</a></p>
+</li>
+<li><p>安装xUnique：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"> // 一定要加sudo</div><div class="line">sudo pip install xUnique</div></pre></td></tr></table></figure>
+</li>
+<li><p>去掉<code>.git/hook/pre-commit.sample</code>的后缀名<code>.sample</code></p>
+</li>
+<li><p>将如下内容添加到<code>pre-commit</code>:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">xunique path/project.xcodeproj</div><div class="line"></div><div class="line">// 如果用了cocopods，还需要加入Pods.xcodeproj</div><div class="line">xunique path/Pods.xcodeproj</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>完成以上操作后，每次commit之前都会通过xUnique将<code>.xcproject</code>文件重新编码，避免合并时的冲突。</p>
+
+      
+    </div>
+
+    
+      
+      
+
+
+
+      
+      
+    
+
+    
+      <footer class="post-footer">
+        
+          <div class="post-tags">
+            
+              <a href="/tags/Gear/">Gear</a>
+            
+              <a href="/tags/Xcode/">Xcode</a>
+            
+          </div>
+        
+        
+        
+  <nav class="post-nav">
+    
+      <a class="prev" href="/2017/04/26/Gear/Cocoapods/">
+        <i class="iconfont icon-left"></i>
+        <span class="prev-text nav-default">Cocoapods</span>
+        <span class="prev-text nav-mobile">Prev</span>
+      </a>
+    
+    
+      <a class="next" href="/2017/02/23/Trick/Interview/">
+        <span class="next-text nav-default">Interview</span>
+        <span class="prev-text nav-mobile">Next</span>
+        <i class="iconfont icon-right"></i>
+      </a>
+    
+  </nav>
+
+      </footer>
+    
+
+  </article>
+
+
+          </div>
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+      </main>
+
+      <footer id="footer" class="footer">
+
+  <div class="social-links">
+    
+      
+        
+          <a href="mailto:nic.reals@outlook.com" class="iconfont icon-email" title="email"></a>
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        
+          <a href="https://github.com/nicreals" class="iconfont icon-github" title="github"></a>
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    
+    
+      <a href="/atom.xml" class="iconfont icon-rss" title="rss"></a>
+    
+  </div>
+
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://hexo.io/">Hexo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/ahonn/hexo-theme-even">Even</a>
+  </span>
+
+  <span class="copyright-year">
+    
+    &copy; 
+     
+      2015 - 
+    
+    2017
+
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">Nic Reals</span>
+  </span>
+</div>
+
+      </footer>
+
+      <div class="back-to-top" id="back-to-top">
+        <i class="iconfont icon-up"></i>
+      </div>
+    </div>
+
+    
+  
+
+
+
+    
+
+
+
+
+  
+    <script type="text/javascript" src="/lib/jquery/jquery-3.1.1.min.js"></script>
+  
+
+  
+    <script type="text/javascript" src="/lib/slideout/slideout.js"></script>
+  
+
+  
+
+
+    <script type="text/javascript" src="/js/src/even.js?v=2.6.0"></script>
+<script type="text/javascript" src="/js/src/bootstrap.js?v=2.6.0"></script>
+
+  </body>
+</html>
