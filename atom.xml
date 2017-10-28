@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://nicreals.com/"/>
+  <link href="http://nic_reals.gitee.io/blog/"/>
   <updated>2017-10-26T13:18:09.794Z</updated>
-  <id>http://nicreals.com/</id>
+  <id>http://nic_reals.gitee.io/blog/</id>
   
   <author>
     <name>Nic Reals</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>WordPress</title>
-    <link href="http://nicreals.com/2017/10/24/Gear/WordPress/"/>
-    <id>http://nicreals.com/2017/10/24/Gear/WordPress/</id>
+    <link href="http://nic_reals.gitee.io/blog/2017/10/24/Gear/WordPress/"/>
+    <id>http://nic_reals.gitee.io/blog/2017/10/24/Gear/WordPress/</id>
     <published>2017-10-24T15:33:37.000Z</published>
     <updated>2017-10-26T13:18:09.794Z</updated>
     
@@ -38,16 +38,16 @@
     </summary>
     
     
-      <category term="Gear" scheme="http://nicreals.com/tags/Gear/"/>
+      <category term="Gear" scheme="http://nic_reals.gitee.io/blog/tags/Gear/"/>
     
-      <category term="WordPress" scheme="http://nicreals.com/tags/WordPress/"/>
+      <category term="WordPress" scheme="http://nic_reals.gitee.io/blog/tags/WordPress/"/>
     
   </entry>
   
   <entry>
     <title>AppCode</title>
-    <link href="http://nicreals.com/2017/09/26/Gear/AppCode/"/>
-    <id>http://nicreals.com/2017/09/26/Gear/AppCode/</id>
+    <link href="http://nic_reals.gitee.io/blog/2017/09/26/Gear/AppCode/"/>
+    <id>http://nic_reals.gitee.io/blog/2017/09/26/Gear/AppCode/</id>
     <published>2017-09-26T15:33:37.000Z</published>
     <updated>2017-10-26T13:06:27.629Z</updated>
     
@@ -90,16 +90,16 @@
     </summary>
     
     
-      <category term="AppCode" scheme="http://nicreals.com/tags/AppCode/"/>
+      <category term="AppCode" scheme="http://nic_reals.gitee.io/blog/tags/AppCode/"/>
     
-      <category term="Gear" scheme="http://nicreals.com/tags/Gear/"/>
+      <category term="Gear" scheme="http://nic_reals.gitee.io/blog/tags/Gear/"/>
     
   </entry>
   
   <entry>
     <title>Atom</title>
-    <link href="http://nicreals.com/2017/09/10/Gear/Atom/"/>
-    <id>http://nicreals.com/2017/09/10/Gear/Atom/</id>
+    <link href="http://nic_reals.gitee.io/blog/2017/09/10/Gear/Atom/"/>
+    <id>http://nic_reals.gitee.io/blog/2017/09/10/Gear/Atom/</id>
     <published>2017-09-10T15:33:37.000Z</published>
     <updated>2017-10-26T13:06:22.573Z</updated>
     
@@ -146,16 +146,16 @@
     </summary>
     
     
-      <category term="Gear" scheme="http://nicreals.com/tags/Gear/"/>
+      <category term="Gear" scheme="http://nic_reals.gitee.io/blog/tags/Gear/"/>
     
-      <category term="Atom" scheme="http://nicreals.com/tags/Atom/"/>
+      <category term="Atom" scheme="http://nic_reals.gitee.io/blog/tags/Atom/"/>
     
   </entry>
   
   <entry>
     <title>Core-Animation</title>
-    <link href="http://nicreals.com/2017/05/18/iOS/Animation/"/>
-    <id>http://nicreals.com/2017/05/18/iOS/Animation/</id>
+    <link href="http://nic_reals.gitee.io/blog/2017/05/18/iOS/Animation/"/>
+    <id>http://nic_reals.gitee.io/blog/2017/05/18/iOS/Animation/</id>
     <published>2017-05-18T15:33:37.000Z</published>
     <updated>2017-10-26T13:05:04.783Z</updated>
     
@@ -178,16 +178,16 @@
     </summary>
     
     
-      <category term="Core-Animation" scheme="http://nicreals.com/tags/Core-Animation/"/>
+      <category term="Core-Animation" scheme="http://nic_reals.gitee.io/blog/tags/Core-Animation/"/>
     
-      <category term="iOS" scheme="http://nicreals.com/tags/iOS/"/>
+      <category term="iOS" scheme="http://nic_reals.gitee.io/blog/tags/iOS/"/>
     
   </entry>
   
   <entry>
     <title>Cocoapods</title>
-    <link href="http://nicreals.com/2017/04/26/Gear/Cocoapods/"/>
-    <id>http://nicreals.com/2017/04/26/Gear/Cocoapods/</id>
+    <link href="http://nic_reals.gitee.io/blog/2017/04/26/Gear/Cocoapods/"/>
+    <id>http://nic_reals.gitee.io/blog/2017/04/26/Gear/Cocoapods/</id>
     <published>2017-04-26T15:33:37.000Z</published>
     <updated>2017-10-26T13:06:17.133Z</updated>
     
@@ -213,16 +213,16 @@
     </summary>
     
     
-      <category term="Gear" scheme="http://nicreals.com/tags/Gear/"/>
+      <category term="Gear" scheme="http://nic_reals.gitee.io/blog/tags/Gear/"/>
     
-      <category term="Cocoapods" scheme="http://nicreals.com/tags/Cocoapods/"/>
+      <category term="Cocoapods" scheme="http://nic_reals.gitee.io/blog/tags/Cocoapods/"/>
     
   </entry>
   
   <entry>
     <title>Xcode</title>
-    <link href="http://nicreals.com/2017/03/06/Gear/Xcode/"/>
-    <id>http://nicreals.com/2017/03/06/Gear/Xcode/</id>
+    <link href="http://nic_reals.gitee.io/blog/2017/03/06/Gear/Xcode/"/>
+    <id>http://nic_reals.gitee.io/blog/2017/03/06/Gear/Xcode/</id>
     <published>2017-03-06T15:33:37.000Z</published>
     <updated>2017-10-26T13:05:21.889Z</updated>
     
@@ -242,16 +242,16 @@
     </summary>
     
     
-      <category term="Gear" scheme="http://nicreals.com/tags/Gear/"/>
+      <category term="Gear" scheme="http://nic_reals.gitee.io/blog/tags/Gear/"/>
     
-      <category term="Xcode" scheme="http://nicreals.com/tags/Xcode/"/>
+      <category term="Xcode" scheme="http://nic_reals.gitee.io/blog/tags/Xcode/"/>
     
   </entry>
   
   <entry>
     <title>Interview</title>
-    <link href="http://nicreals.com/2017/02/23/Trick/Interview/"/>
-    <id>http://nicreals.com/2017/02/23/Trick/Interview/</id>
+    <link href="http://nic_reals.gitee.io/blog/2017/02/23/Trick/Interview/"/>
+    <id>http://nic_reals.gitee.io/blog/2017/02/23/Trick/Interview/</id>
     <published>2017-02-23T15:33:37.000Z</published>
     <updated>2017-10-26T13:03:02.199Z</updated>
     
@@ -275,14 +275,14 @@
     </summary>
     
     
-      <category term="Interview; Trick" scheme="http://nicreals.com/tags/Interview-Trick/"/>
+      <category term="Interview; Trick" scheme="http://nic_reals.gitee.io/blog/tags/Interview-Trick/"/>
     
   </entry>
   
   <entry>
     <title>Swift</title>
-    <link href="http://nicreals.com/2017/02/09/iOS/Swift/"/>
-    <id>http://nicreals.com/2017/02/09/iOS/Swift/</id>
+    <link href="http://nic_reals.gitee.io/blog/2017/02/09/iOS/Swift/"/>
+    <id>http://nic_reals.gitee.io/blog/2017/02/09/iOS/Swift/</id>
     <published>2017-02-09T15:33:37.000Z</published>
     <updated>2017-10-26T13:04:02.401Z</updated>
     
@@ -304,16 +304,16 @@
     </summary>
     
     
-      <category term="iOS" scheme="http://nicreals.com/tags/iOS/"/>
+      <category term="iOS" scheme="http://nic_reals.gitee.io/blog/tags/iOS/"/>
     
-      <category term="Swift" scheme="http://nicreals.com/tags/Swift/"/>
+      <category term="Swift" scheme="http://nic_reals.gitee.io/blog/tags/Swift/"/>
     
   </entry>
   
   <entry>
     <title>Travis CI</title>
-    <link href="http://nicreals.com/2017/01/26/Gear/Travis-CI/"/>
-    <id>http://nicreals.com/2017/01/26/Gear/Travis-CI/</id>
+    <link href="http://nic_reals.gitee.io/blog/2017/01/26/Gear/Travis-CI/"/>
+    <id>http://nic_reals.gitee.io/blog/2017/01/26/Gear/Travis-CI/</id>
     <published>2017-01-26T15:33:37.000Z</published>
     <updated>2017-10-26T13:05:36.588Z</updated>
     
@@ -335,18 +335,18 @@
     </summary>
     
     
-      <category term="Gear" scheme="http://nicreals.com/tags/Gear/"/>
+      <category term="Gear" scheme="http://nic_reals.gitee.io/blog/tags/Gear/"/>
     
-      <category term="Travis" scheme="http://nicreals.com/tags/Travis/"/>
+      <category term="Travis" scheme="http://nic_reals.gitee.io/blog/tags/Travis/"/>
     
-      <category term="CI" scheme="http://nicreals.com/tags/CI/"/>
+      <category term="CI" scheme="http://nic_reals.gitee.io/blog/tags/CI/"/>
     
   </entry>
   
   <entry>
     <title>Markdown</title>
-    <link href="http://nicreals.com/2017/01/19/Gear/Markdown/"/>
-    <id>http://nicreals.com/2017/01/19/Gear/Markdown/</id>
+    <link href="http://nic_reals.gitee.io/blog/2017/01/19/Gear/Markdown/"/>
+    <id>http://nic_reals.gitee.io/blog/2017/01/19/Gear/Markdown/</id>
     <published>2017-01-19T15:33:37.000Z</published>
     <updated>2017-10-26T13:19:45.136Z</updated>
     
@@ -436,16 +436,16 @@
     </summary>
     
     
-      <category term="Gear" scheme="http://nicreals.com/tags/Gear/"/>
+      <category term="Gear" scheme="http://nic_reals.gitee.io/blog/tags/Gear/"/>
     
-      <category term="MarkDown" scheme="http://nicreals.com/tags/MarkDown/"/>
+      <category term="MarkDown" scheme="http://nic_reals.gitee.io/blog/tags/MarkDown/"/>
     
   </entry>
   
   <entry>
     <title>Gitbook</title>
-    <link href="http://nicreals.com/2016/11/20/Gear/Gitbook/"/>
-    <id>http://nicreals.com/2016/11/20/Gear/Gitbook/</id>
+    <link href="http://nic_reals.gitee.io/blog/2016/11/20/Gear/Gitbook/"/>
+    <id>http://nic_reals.gitee.io/blog/2016/11/20/Gear/Gitbook/</id>
     <published>2016-11-20T15:33:37.000Z</published>
     <updated>2017-10-26T13:06:06.270Z</updated>
     
@@ -463,16 +463,16 @@
     </summary>
     
     
-      <category term="Gear" scheme="http://nicreals.com/tags/Gear/"/>
+      <category term="Gear" scheme="http://nic_reals.gitee.io/blog/tags/Gear/"/>
     
-      <category term="Gitbook" scheme="http://nicreals.com/tags/Gitbook/"/>
+      <category term="Gitbook" scheme="http://nic_reals.gitee.io/blog/tags/Gitbook/"/>
     
   </entry>
   
   <entry>
     <title>JavaScript</title>
-    <link href="http://nicreals.com/2016/10/22/Front/JavaScript/"/>
-    <id>http://nicreals.com/2016/10/22/Front/JavaScript/</id>
+    <link href="http://nic_reals.gitee.io/blog/2016/10/22/Front/JavaScript/"/>
+    <id>http://nic_reals.gitee.io/blog/2016/10/22/Front/JavaScript/</id>
     <published>2016-10-22T15:33:37.000Z</published>
     <updated>2017-10-26T13:06:34.501Z</updated>
     
@@ -492,16 +492,16 @@
     </summary>
     
     
-      <category term="JavaScript" scheme="http://nicreals.com/tags/JavaScript/"/>
+      <category term="JavaScript" scheme="http://nic_reals.gitee.io/blog/tags/JavaScript/"/>
     
-      <category term="Front" scheme="http://nicreals.com/tags/Front/"/>
+      <category term="Front" scheme="http://nic_reals.gitee.io/blog/tags/Front/"/>
     
   </entry>
   
   <entry>
     <title>Network</title>
-    <link href="http://nicreals.com/2016/09/26/CS/Network/"/>
-    <id>http://nicreals.com/2016/09/26/CS/Network/</id>
+    <link href="http://nic_reals.gitee.io/blog/2016/09/26/CS/Network/"/>
+    <id>http://nic_reals.gitee.io/blog/2016/09/26/CS/Network/</id>
     <published>2016-09-26T15:33:37.000Z</published>
     <updated>2017-10-26T13:06:43.675Z</updated>
     
@@ -530,14 +530,14 @@
     </summary>
     
     
-      <category term="CS" scheme="http://nicreals.com/tags/CS/"/>
+      <category term="CS" scheme="http://nic_reals.gitee.io/blog/tags/CS/"/>
     
   </entry>
   
   <entry>
     <title>Design Pattern</title>
-    <link href="http://nicreals.com/2016/09/24/CS/Design-Pattern/"/>
-    <id>http://nicreals.com/2016/09/24/CS/Design-Pattern/</id>
+    <link href="http://nic_reals.gitee.io/blog/2016/09/24/CS/Design-Pattern/"/>
+    <id>http://nic_reals.gitee.io/blog/2016/09/24/CS/Design-Pattern/</id>
     <published>2016-09-24T15:33:37.000Z</published>
     <updated>2017-10-26T13:06:47.340Z</updated>
     
@@ -556,14 +556,14 @@
     </summary>
     
     
-      <category term="CS" scheme="http://nicreals.com/tags/CS/"/>
+      <category term="CS" scheme="http://nic_reals.gitee.io/blog/tags/CS/"/>
     
   </entry>
   
   <entry>
     <title>RunLoop</title>
-    <link href="http://nicreals.com/2016/09/09/iOS/RunLoop/"/>
-    <id>http://nicreals.com/2016/09/09/iOS/RunLoop/</id>
+    <link href="http://nic_reals.gitee.io/blog/2016/09/09/iOS/RunLoop/"/>
+    <id>http://nic_reals.gitee.io/blog/2016/09/09/iOS/RunLoop/</id>
     <published>2016-09-09T15:33:37.000Z</published>
     <updated>2017-10-26T13:04:11.720Z</updated>
     
@@ -583,16 +583,16 @@
     </summary>
     
     
-      <category term="iOS" scheme="http://nicreals.com/tags/iOS/"/>
+      <category term="iOS" scheme="http://nic_reals.gitee.io/blog/tags/iOS/"/>
     
-      <category term="RunLoop" scheme="http://nicreals.com/tags/RunLoop/"/>
+      <category term="RunLoop" scheme="http://nic_reals.gitee.io/blog/tags/RunLoop/"/>
     
   </entry>
   
   <entry>
     <title>Tools</title>
-    <link href="http://nicreals.com/2016/08/20/Gear/Tools/"/>
-    <id>http://nicreals.com/2016/08/20/Gear/Tools/</id>
+    <link href="http://nic_reals.gitee.io/blog/2016/08/20/Gear/Tools/"/>
+    <id>http://nic_reals.gitee.io/blog/2016/08/20/Gear/Tools/</id>
     <published>2016-08-20T15:33:37.000Z</published>
     <updated>2017-10-26T13:05:42.853Z</updated>
     
@@ -610,14 +610,14 @@
     </summary>
     
     
-      <category term="Gear" scheme="http://nicreals.com/tags/Gear/"/>
+      <category term="Gear" scheme="http://nic_reals.gitee.io/blog/tags/Gear/"/>
     
   </entry>
   
   <entry>
     <title>Git</title>
-    <link href="http://nicreals.com/2016/08/20/Gear/Git/"/>
-    <id>http://nicreals.com/2016/08/20/Gear/Git/</id>
+    <link href="http://nic_reals.gitee.io/blog/2016/08/20/Gear/Git/"/>
+    <id>http://nic_reals.gitee.io/blog/2016/08/20/Gear/Git/</id>
     <published>2016-08-20T15:33:37.000Z</published>
     <updated>2017-10-26T13:06:11.853Z</updated>
     
@@ -631,16 +631,16 @@
     </summary>
     
     
-      <category term="Gear" scheme="http://nicreals.com/tags/Gear/"/>
+      <category term="Gear" scheme="http://nic_reals.gitee.io/blog/tags/Gear/"/>
     
-      <category term="Git" scheme="http://nicreals.com/tags/Git/"/>
+      <category term="Git" scheme="http://nic_reals.gitee.io/blog/tags/Git/"/>
     
   </entry>
   
   <entry>
     <title>Shell</title>
-    <link href="http://nicreals.com/2016/08/01/Gear/Shell/"/>
-    <id>http://nicreals.com/2016/08/01/Gear/Shell/</id>
+    <link href="http://nic_reals.gitee.io/blog/2016/08/01/Gear/Shell/"/>
+    <id>http://nic_reals.gitee.io/blog/2016/08/01/Gear/Shell/</id>
     <published>2016-08-01T15:33:37.000Z</published>
     <updated>2017-10-26T13:05:48.350Z</updated>
     
@@ -683,16 +683,16 @@
     </summary>
     
     
-      <category term="Gear" scheme="http://nicreals.com/tags/Gear/"/>
+      <category term="Gear" scheme="http://nic_reals.gitee.io/blog/tags/Gear/"/>
     
-      <category term="Shell" scheme="http://nicreals.com/tags/Shell/"/>
+      <category term="Shell" scheme="http://nic_reals.gitee.io/blog/tags/Shell/"/>
     
   </entry>
   
   <entry>
     <title>Mac</title>
-    <link href="http://nicreals.com/2016/07/09/Gear/Mac/"/>
-    <id>http://nicreals.com/2016/07/09/Gear/Mac/</id>
+    <link href="http://nic_reals.gitee.io/blog/2016/07/09/Gear/Mac/"/>
+    <id>http://nic_reals.gitee.io/blog/2016/07/09/Gear/Mac/</id>
     <published>2016-07-09T15:33:37.000Z</published>
     <updated>2017-10-26T13:06:00.517Z</updated>
     
@@ -740,16 +740,16 @@
     </summary>
     
     
-      <category term="Gear" scheme="http://nicreals.com/tags/Gear/"/>
+      <category term="Gear" scheme="http://nic_reals.gitee.io/blog/tags/Gear/"/>
     
-      <category term="Mac" scheme="http://nicreals.com/tags/Mac/"/>
+      <category term="Mac" scheme="http://nic_reals.gitee.io/blog/tags/Mac/"/>
     
   </entry>
   
   <entry>
     <title>Memory Management</title>
-    <link href="http://nicreals.com/2016/05/19/iOS/Memory-Management/"/>
-    <id>http://nicreals.com/2016/05/19/iOS/Memory-Management/</id>
+    <link href="http://nic_reals.gitee.io/blog/2016/05/19/iOS/Memory-Management/"/>
+    <id>http://nic_reals.gitee.io/blog/2016/05/19/iOS/Memory-Management/</id>
     <published>2016-05-19T15:33:37.000Z</published>
     <updated>2017-10-26T13:04:44.375Z</updated>
     
@@ -779,9 +779,9 @@
     </summary>
     
     
-      <category term="iOS" scheme="http://nicreals.com/tags/iOS/"/>
+      <category term="iOS" scheme="http://nic_reals.gitee.io/blog/tags/iOS/"/>
     
-      <category term="Memory-Management" scheme="http://nicreals.com/tags/Memory-Management/"/>
+      <category term="Memory-Management" scheme="http://nic_reals.gitee.io/blog/tags/Memory-Management/"/>
     
   </entry>
   
