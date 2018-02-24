@@ -1,0 +1,13 @@
+./SUMMARY.md
+[0;36minfo:[0m 9 plugins are installed 
+[0;36minfo:[0m 8 explicitly listed 
+[0;36minfo:[0m loading plugin "github"... [0;32mOK[0m 
+[0;36minfo:[0m loading plugin "katex"... [0;32mOK[0m 
+[0;36minfo:[0m loading plugin "highlight"... [0;32mOK[0m 
+[0;36minfo:[0m loading plugin "search"... [0;32mOK[0m 
+[0;36minfo:[0m loading plugin "lunr"... [0;32mOK[0m 
+[0;36minfo:[0m loading plugin "sharing"... [0;32mOK[0m 
+[0;36minfo:[0m loading plugin "fontsettings"... [0;32mOK[0m 
+[0;36minfo:[0m loading plugin "theme-default"... [0;32mOK[0m 
+[0;36minfo:[0m found 33 pages 
+[0;36minfo:[0m found 29 asset files 
