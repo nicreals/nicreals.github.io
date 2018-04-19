@@ -176,7 +176,20 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.3" data-path="FrameWork.html">
+        <li class="chapter " data-level="1.3.3" data-path="Advance Objective-C.html">
+            
+                <a href="Advance Objective-C.html">
+            
+                    
+                    Advance Objective-C
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="FrameWork.html">
             
                 <a href="FrameWork.html">
             
@@ -189,7 +202,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.4" data-path="Animation.html">
+        <li class="chapter " data-level="1.3.5" data-path="Animation.html">
             
                 <a href="Animation.html">
             
@@ -202,7 +215,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.5" data-path="MultiThread.html">
+        <li class="chapter " data-level="1.3.6" data-path="MultiThread.html">
             
                 <a href="MultiThread.html">
             
@@ -215,7 +228,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.6" data-path="Performance.html">
+        <li class="chapter " data-level="1.3.7" data-path="Performance.html">
             
                 <a href="Performance.html">
             
@@ -228,7 +241,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.7" data-path="Swift.html">
+        <li class="chapter " data-level="1.3.8" data-path="Swift.html">
             
                 <a href="Swift.html">
             
@@ -241,7 +254,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.8" data-path="MEMO.html">
+        <li class="chapter " data-level="1.3.9" data-path="MEMO.html">
             
                 <a href="MEMO.html">
             
@@ -254,7 +267,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.9" data-path="Masonry.html">
+        <li class="chapter " data-level="1.3.10" data-path="Masonry.html">
             
                 <a href="Masonry.html">
             
@@ -267,7 +280,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.10" data-path="iOS-Devices.html">
+        <li class="chapter " data-level="1.3.11" data-path="iOS-Devices.html">
             
                 <a href="iOS-Devices.html">
             
@@ -280,7 +293,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.11" data-path="Objective-C.html">
+        <li class="chapter " data-level="1.3.12" data-path="Objective-C.html">
             
                 <a href="Objective-C.html">
             
@@ -293,7 +306,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.12" data-path="NSURLSession.html">
+        <li class="chapter " data-level="1.3.13" data-path="NSURLSession.html">
             
                 <a href="NSURLSession.html">
             
@@ -306,7 +319,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.13" data-path="Debug.html">
+        <li class="chapter " data-level="1.3.14" data-path="Debug.html">
             
                 <a href="Debug.html">
             
@@ -319,7 +332,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.14" data-path="Memory-Management.html">
+        <li class="chapter " data-level="1.3.15" data-path="Memory-Management.html">
             
                 <a href="Memory-Management.html">
             
@@ -332,7 +345,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.15" data-path="RunLoop.html">
+        <li class="chapter " data-level="1.3.16" data-path="RunLoop.html">
             
                 <a href="RunLoop.html">
             
@@ -661,22 +674,28 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="block">Block</h1>
+<blockquote>
+<p>[Objective-C &#x9AD8;&#x7EA7;&#x7F16;&#x7A0B; iOS&#x4E0E;OSX&#x591A;&#x7EBF;&#x7A0B;&#x548C;&#x5185;&#x5B58;&#x7BA1;&#x7406;]</p>
+</blockquote>
 <h2 id="&#x5B9A;&#x4E49;">&#x5B9A;&#x4E49;</h2>
-<pre><code>int (^multiBlock) (int) = ^(int intVar) {
-  return intVar * 2;
+<p>Block(&#x95ED;&#x5305;)&#x662F;C&#x8BED;&#x8A00;&#x7684;&#x6269;&#x5145;&#x529F;&#x80FD;,&#x662F;&#x5E26;&#x6709;&#x81EA;&#x52A8;&#x53D8;&#x91CF;(&#x5C40;&#x90E8;&#x53D8;&#x91CF;)&#x7684;&#x533F;&#x540D;&#x51FD;&#x6570;;</p>
+<pre><code class="lang-c"><span class="hljs-keyword">int</span> (^multiBlock) (<span class="hljs-keyword">int</span>) = ^(<span class="hljs-keyword">int</span> intVar) {
+  <span class="hljs-keyword">return</span> intVar * <span class="hljs-number">2</span>;
 }
-</code></pre><h2 id="block&#x4E2D;&#x4F7F;&#x7528;&#x53D8;&#x91CF;">block&#x4E2D;&#x4F7F;&#x7528;&#x53D8;&#x91CF;</h2>
+</code></pre>
+<h2 id="block&#x4E2D;&#x4F7F;&#x7528;&#x53D8;&#x91CF;">block&#x4E2D;&#x4F7F;&#x7528;&#x53D8;&#x91CF;</h2>
 <p>&#x5728;block&#x4E2D;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#x76F8;&#x5F53;&#x4E8E;copy&#x4E00;&#x4EFD;&#x5230;block&#x5185;&#x90E8;&#xFF0C;block&#x4E0D;&#x80FD;&#x66F4;&#x6539;&#x53D8;&#x91CF;&#x7684;&#x503C;&#xFF0C;&#x4E5F;&#x4E0D;&#x80FD;&#x5B9E;&#x65F6;&#x76D1;&#x6D4B;&#x5230;&#x53D8;&#x91CF;&#x503C;&#x7684;&#x6539;&#x53D8;&#xFF0C;&#x9664;&#x975E;&#x8BE5;&#x53D8;&#x91CF;&#x4E3A;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x6216;&#x8005;&#x7ED9;&#x8BE5;&#x53D8;&#x91CF;&#x52A0;&#x4E0A;<code>__block</code>&#x6807;&#x8BB0;.</p>
 <h2 id="block&#x7684;&#x9012;&#x5F52;&#x8C03;&#x7528;">block&#x7684;&#x9012;&#x5F52;&#x8C03;&#x7528;</h2>
 <p>block&#x8981;&#x9012;&#x5F52;&#x8C03;&#x7528;&#xFF0C;block&#x672C;&#x8EAB;&#x5FC5;&#x987B;&#x662F;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x6216;&#x8005;&#x662F;&#x9759;&#x6001;&#x5E38;&#x91CF;&#xFF1A;</p>
-<pre><code>static void(^ const block)(int) = ^(int i) {
-  if (i &gt; 0) {
-    NSLog(@&quot;%d&quot;,i);
-    block(i - 1);
+<pre><code class="lang-c"><span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-title">void</span><span class="hljs-params">(^ <span class="hljs-keyword">const</span> block)</span><span class="hljs-params">(<span class="hljs-keyword">int</span>)</span> </span>= ^(<span class="hljs-keyword">int</span> i) {
+  <span class="hljs-keyword">if</span> (i &gt; <span class="hljs-number">0</span>) {
+    NSLog(@<span class="hljs-string">&quot;%d&quot;</span>,i);
+    block(i - <span class="hljs-number">1</span>);
   }
 }
-block(4);
+block(<span class="hljs-number">4</span>);
 </code></pre>
+
                                 
                                 </section>
                             
@@ -715,7 +734,7 @@ block(4);
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Block","level":"1.3.1","depth":2,"next":{"title":"Runtime","level":"1.3.2","depth":2,"path":"iOS/Runtime.md","ref":"iOS/Runtime.md","articles":[]},"previous":{"title":"iOS","level":"1.3","depth":1,"ref":"","articles":[{"title":"Block","level":"1.3.1","depth":2,"path":"iOS/Block.md","ref":"iOS/Block.md","articles":[]},{"title":"Runtime","level":"1.3.2","depth":2,"path":"iOS/Runtime.md","ref":"iOS/Runtime.md","articles":[]},{"title":"Framework","level":"1.3.3","depth":2,"path":"iOS/FrameWork.md","ref":"iOS/FrameWork.md","articles":[]},{"title":"Animation","level":"1.3.4","depth":2,"path":"iOS/Animation.md","ref":"iOS/Animation.md","articles":[]},{"title":"MultiThread","level":"1.3.5","depth":2,"path":"iOS/MultiThread.md","ref":"iOS/MultiThread.md","articles":[]},{"title":"Performance Optimize","level":"1.3.6","depth":2,"path":"iOS/Performance.md","ref":"iOS/Performance.md","articles":[]},{"title":"Swift","level":"1.3.7","depth":2,"path":"iOS/Swift.md","ref":"iOS/Swift.md","articles":[]},{"title":"MEMO","level":"1.3.8","depth":2,"path":"iOS/MEMO.md","ref":"iOS/MEMO.md","articles":[]},{"title":"Masonry","level":"1.3.9","depth":2,"path":"iOS/Masonry.md","ref":"iOS/Masonry.md","articles":[]},{"title":"iOS Devices","level":"1.3.10","depth":2,"path":"iOS/iOS-Devices.md","ref":"iOS/iOS-Devices.md","articles":[]},{"title":"Objective-C","level":"1.3.11","depth":2,"path":"iOS/Objective-C.md","ref":"iOS/Objective-C.md","articles":[]},{"title":"NSURLSession","level":"1.3.12","depth":2,"path":"iOS/NSURLSession.md","ref":"iOS/NSURLSession.md","articles":[]},{"title":"Debug","level":"1.3.13","depth":2,"path":"iOS/Debug.md","ref":"iOS/Debug.md","articles":[]},{"title":"Memory Management","level":"1.3.14","depth":2,"path":"iOS/Memory-Management.md","ref":"iOS/Memory-Management.md","articles":[]},{"title":"RunLoop","level":"1.3.15","depth":2,"path":"iOS/RunLoop.md","ref":"iOS/RunLoop.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["github","katex"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/nicreals"},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"katex":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Nic","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Nic's notes","gitbook":"*","description":"a boy's treasure"},"file":{"path":"iOS/Block.md","mtime":"2018-02-24T10:09:53.226Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-02-24T10:10:38.660Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Block","level":"1.3.1","depth":2,"next":{"title":"Runtime","level":"1.3.2","depth":2,"path":"iOS/Runtime.md","ref":"iOS/Runtime.md","articles":[]},"previous":{"title":"iOS","level":"1.3","depth":1,"ref":"","articles":[{"title":"Block","level":"1.3.1","depth":2,"path":"iOS/Block.md","ref":"iOS/Block.md","articles":[]},{"title":"Runtime","level":"1.3.2","depth":2,"path":"iOS/Runtime.md","ref":"iOS/Runtime.md","articles":[]},{"title":"Advance Objective-C","level":"1.3.3","depth":2,"path":"iOS/Advance Objective-C.md","ref":"iOS/Advance Objective-C.md","articles":[]},{"title":"Framework","level":"1.3.4","depth":2,"path":"iOS/FrameWork.md","ref":"iOS/FrameWork.md","articles":[]},{"title":"Animation","level":"1.3.5","depth":2,"path":"iOS/Animation.md","ref":"iOS/Animation.md","articles":[]},{"title":"MultiThread","level":"1.3.6","depth":2,"path":"iOS/MultiThread.md","ref":"iOS/MultiThread.md","articles":[]},{"title":"Performance Optimize","level":"1.3.7","depth":2,"path":"iOS/Performance.md","ref":"iOS/Performance.md","articles":[]},{"title":"Swift","level":"1.3.8","depth":2,"path":"iOS/Swift.md","ref":"iOS/Swift.md","articles":[]},{"title":"MEMO","level":"1.3.9","depth":2,"path":"iOS/MEMO.md","ref":"iOS/MEMO.md","articles":[]},{"title":"Masonry","level":"1.3.10","depth":2,"path":"iOS/Masonry.md","ref":"iOS/Masonry.md","articles":[]},{"title":"iOS Devices","level":"1.3.11","depth":2,"path":"iOS/iOS-Devices.md","ref":"iOS/iOS-Devices.md","articles":[]},{"title":"Objective-C","level":"1.3.12","depth":2,"path":"iOS/Objective-C.md","ref":"iOS/Objective-C.md","articles":[]},{"title":"NSURLSession","level":"1.3.13","depth":2,"path":"iOS/NSURLSession.md","ref":"iOS/NSURLSession.md","articles":[]},{"title":"Debug","level":"1.3.14","depth":2,"path":"iOS/Debug.md","ref":"iOS/Debug.md","articles":[]},{"title":"Memory Management","level":"1.3.15","depth":2,"path":"iOS/Memory-Management.md","ref":"iOS/Memory-Management.md","articles":[]},{"title":"RunLoop","level":"1.3.16","depth":2,"path":"iOS/RunLoop.md","ref":"iOS/RunLoop.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["github","katex"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/nicreals"},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"katex":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Nic","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Nic's notes","gitbook":"*","description":"a boy's treasure"},"file":{"path":"iOS/Block.md","mtime":"2018-04-19T08:00:19.365Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-19T08:01:08.837Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
